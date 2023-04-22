@@ -1,20 +1,17 @@
-import { HeaderContainer, Button } from "./styles"
+import { HeaderMain, Logo, Navigation, NavigationItem, NavigationLink} from "./styles"
 
 export function Header() {
   return (
-    <HeaderContainer>
-      <header>
-        <h1>Matheus Valentim</h1>
-        <h2>Front-end Developer</h2>
-        <Button>
-          <div className="menu">
-            <span>About</span>
-            <span>Projects</span>
-            <span>Skills</span>
-            <span>Contact</span>
-          </div>
-        </Button>
-      </header>
-    </HeaderContainer>
+    <HeaderMain>
+      <Logo>MV</Logo>
+      <Navigation>
+        <NavigationItem>
+          <NavigationLink href="#">Home</NavigationLink>
+          <NavigationLink href="#">Home</NavigationLink>
+          <NavigationLink href="#">Home</NavigationLink>
+          <NavigationLink href="#">Home</NavigationLink>
+        </NavigationItem>
+      </Navigation>
+    </HeaderMain>
   )
 }

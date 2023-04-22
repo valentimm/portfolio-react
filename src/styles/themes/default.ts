@@ -1,22 +1,26 @@
 export const defaultTheme = {
-  //Produtos
-    'yellow-dark': '#C47F17',
-    'yellow':  '#DBAC2C',
-    'yellow-light': '#F1E9C9',
-  
-    'purple-dark' : '#4B2995',
-    'purple' : '#8047F8',
-    'purple-light' : '#EBE5F9',
-  //Base
-    'base-title' : '#272221',
-    'base-subtitle' : '#403937',
-    'base-text' : '#574F4D',
-    'base-label' : '#8D8686',
-    'base-hover' : '#D7D5D5',
-    'base-button' : '#E6E5E5',
-    'base-input' : '#EDEDED',
-    'base-card' : '#F3F2F2',
-    'base-background' : '#FAFAFA',
-    'white' : '#FFFFFF',
+    'base-50': '#f2f9f9',
+    'base-100': '#ddeff0',
+    'base-200': '#bfe0e2',
+    'base-300': '#92cace',
+    'base-400': '#5faab1',
+    'base-500': '#438e96',
+    'base-600': '#3b757f',
+    'base-700': '#356169',
+    'base-800': '#325158',
+    'base-900': '#2d464c',
+    'base-950': '#1a2c32',
+
+    'primary-100':'#D4AF37',
+    'primary-200':'#b49214',
+    'primary-300':'#6c5400',
+    'accent-100':'#C0C0C0',
+    'accent-200':'#626262',
+    'text-100':'#FFFFFF',
+    'text-200':'#e0e0e0',
+    'bg-100':'#1E1E1E',
+    'bg-200':'#2d2d2d',
+    'bg-300':'#454545',
+      
   }
   

@@ -8,6 +8,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
   body {
-    background-color: ${props => props.theme['purple-light']};
+    background-color: ${props => props.theme['bg-100']};
   }
 `
