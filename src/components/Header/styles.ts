@@ -33,8 +33,11 @@ export const NavigationLink = styled.a`
   text-decoration: none;
   color: ${props => props.theme['text-100']};
   margin-right: 1rem;
+  padding: 0.5rem;
   &:hover {
     color: ${props => props.theme['primary-200']};
+    border-bottom: 5px solid ${props => props.theme['primary-200']};
+    transition: 0.1s ease-in-out;
   }
 `
 

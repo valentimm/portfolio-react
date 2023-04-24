@@ -7,9 +7,9 @@ export function Header() {
       <Navigation>
         <NavigationItem>
           <NavigationLink href="#">Home</NavigationLink>
-          <NavigationLink href="#">Home</NavigationLink>
-          <NavigationLink href="#">Home</NavigationLink>
-          <NavigationLink href="#">Home</NavigationLink>
+          <NavigationLink href="#">About</NavigationLink>
+          <NavigationLink href="#">Stacks</NavigationLink>
+          <NavigationLink href="#">Contact</NavigationLink>
         </NavigationItem>
       </Navigation>
     </HeaderMain>
