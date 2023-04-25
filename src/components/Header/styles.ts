@@ -9,7 +9,29 @@ export const HeaderMain = styled.header`
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  border-radius: 9999px
+  border-radius: 9999px;
+
+  nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+      --webkit-text-decoration-skip: none;
+      color: ${props => props.theme['text-100']};
+      margin-right: 1rem;
+      padding: 0.5rem;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid transparent;
+      &:hover {
+        color: ${props => props.theme['primary-200']};
+        border-bottom: 5px solid ${props => props.theme['primary-200']};
+        transition: 0.1s ease-in-out;
+      }
+    }
+  }
 `;
 
 export const Logo = styled.h1`
@@ -18,33 +40,3 @@ export const Logo = styled.h1`
   font-weight: 700;
   color: ${props => props.theme['primary-100']};
 `;
-
-export const Navigation = styled.ul`
-  display: flex;
-  list-style: none;
-  margin: 0;
-`;
-
-export const NavigationItem = styled.li`
-  margin-right: 1rem;
-`;
-
-export const NavigationLink = styled.a`
-  text-decoration: none;
-  color: ${props => props.theme['text-100']};
-  margin-right: 1rem;
-  padding: 0.5rem;
-  &:hover {
-    color: ${props => props.theme['primary-200']};
-    border-bottom: 5px solid ${props => props.theme['primary-200']};
-    transition: 0.1s ease-in-out;
-  }
-`
-
-export const Button = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: red;
-  
-`
