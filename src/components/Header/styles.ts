@@ -38,5 +38,5 @@ export const Logo = styled.h1`
   margin-left: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: ${props => props.theme['primary-100']};
+  color: ${props => props.theme['primary-000']};
 `;
