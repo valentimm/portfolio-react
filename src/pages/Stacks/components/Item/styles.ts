@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ItemProps } from './index';
 
 export const StackItem = styled.main`
   display: flex;

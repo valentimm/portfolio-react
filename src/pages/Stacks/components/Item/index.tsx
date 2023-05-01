@@ -9,7 +9,7 @@ export interface ItemProps {
 export function Item ({ name, icon }: ItemProps) {
   return (
     <StackItem>
-        <div id="name">{name}</div>
+        <div>{name}</div>
         <img src={icon} alt={name} />
     </StackItem>
   )
