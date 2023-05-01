@@ -1,21 +1,21 @@
 import { StacksList } from './styles';
 import { Item, ItemProps } from './components/Item';
-import react from './assets/react-white.svg';
-import native from './assets/iphone-white.svg';
-import figma from './assets/figma-white.svg';
-import python from './assets/python-white.svg';
-import typescript from './assets/typeScript-white.svg';
-import html from './assets/html5-white.svg';
-import css from './assets/css3-white.svg';
-import javascript from './assets/javascript-white.svg';
-import nodejs from './assets/nodejs-white.svg';
-import next from './assets/nextjs-white.svg';
-import styledcomponents from './assets/styledComponents-white.svg';
-import sass from './assets/sass-white.svg';
-import git from './assets/git-white.svg';
-import mui from './assets/materialUi-white.svg';
-import storybook from './assets/storybook-white.svg';
-import tailwind from './assets/tailwind-white.svg';
+import react from './assets/react.svg';
+import native from './assets/iphone.svg';
+import figma from './assets/figma.svg';
+import python from './assets/python.svg';
+import typescript from './assets/typescript.svg';
+import html from './assets/html5.svg';
+import css from './assets/css3.svg';
+import javascript from './assets/javascript.svg';
+import nodejs from './assets/nodejs.svg';
+import next from './assets/nextjs.svg';
+import styledcomponents from './assets/styledComponents.svg';
+import sass from './assets/sass.svg';
+import git from './assets/git.svg';
+import mui from './assets/materialUi.svg';
+import storybook from './assets/storybook.svg';
+import tailwind from './assets/tailwind.svg';
 
 export function Stacks() {
   const items: ItemProps[] = [
