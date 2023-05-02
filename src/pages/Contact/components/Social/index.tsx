@@ -4,15 +4,20 @@ export interface SocialLinksProps {
   key: number;
   name: string;
   icon: string;
+  link: string;
 }
 
-export function SocialLinks ({ name, icon }: SocialLinksProps) {
+export function SocialLinks ({ name, icon, link }: SocialLinksProps) {
   return (
     <ContactBox>
       <div id="socialContainer">
-        <img src={icon} alt={name} />
+        <a href={link} target="_blank">
+          <img src={icon} alt={name}/>
+        </a>
       </div>
-        {name}
+        <div id="name">
+          {name}
+        </div>
     </ContactBox>
   )
 }

@@ -3,12 +3,14 @@ import { ContactMain } from "./styles";
 import mail from './assets/mail-white.svg';
 import github from './assets/github-white.svg';
 import linkedin from './assets/linkedin-white.svg';
+import instagram from './assets/instagram-white.svg';
 
 export function Contact () {
   const socialLinks: SocialLinksProps[] = [
-    { key: 1, name: '@valentimm', icon: github },
-    { key: 2, name: '@valentimm', icon: linkedin },
-    { key: 3, name: 'meduardo.valentim@gmail.com', icon: mail },
+    { key: 1, name: '@valentimm', icon: github, link:'https://github.com/valentimm' },
+    { key: 2, name: '@valentimm', icon: linkedin, link:'https://linkedin.com/in/valentimm' },
+    { key: 3, name: 'meduardo.valentim@gmail.com', icon: mail, link:'mailto:meduardo.valentim@gmail.com' },
+    { key: 4, name: '@mvalentimm', icon: instagram, link:'https://instagram.com/mvalentimm' },
   ];
   return (
     <ContactMain>
@@ -21,6 +23,7 @@ export function Contact () {
               key={social.key}
               name={social.name}
               icon={social.icon}
+              link={social.link}
             />
           );
         })

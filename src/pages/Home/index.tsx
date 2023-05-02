@@ -1,4 +1,13 @@
 import { HomeMain } from "./styles"
+import { saveAs } from 'file-saver';
+
+function handleDownload() {
+  const pdfUrl = './assets/D.pdf'; // Insira a URL do arquivo PDF que deseja baixar
+  const pdfFileName = 'o.pdf'; // Insira o nome que deseja dar ao arquivo PDF baixado
+
+  saveAs(pdfUrl, pdfFileName);
+}
+
 
 export function Home () {
   return (
@@ -9,7 +18,7 @@ export function Home () {
           <h2>Matheus Valentim :)</h2>
           <p>Desenvolvedor Front-end</p>
           <div className="buttons">
-            <button id="home_button">
+            <button id="home_button" >
               <a>Baixar CV</a>
             </button>
             <button id="home_button">
