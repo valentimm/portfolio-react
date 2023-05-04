@@ -10,14 +10,14 @@ export interface SocialLinksProps {
 export function SocialLinks ({ name, icon, link }: SocialLinksProps) {
   return (
     <ContactBox>
-      <div id="socialContainer">
-        <a href={link} target="_blank">
+      <a href={link} target="_blank">
+        <div id="socialContainer">
           <img src={icon} alt={name}/>
-        </a>
-      </div>
-        <div id="name">
-          {name}
+          <div id="name">
+            {name}
+          </div>
         </div>
+      </a>
     </ContactBox>
   )
 }

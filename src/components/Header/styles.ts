@@ -26,8 +26,8 @@ export const HeaderMain = styled.header`
       border-bottom: 5px solid transparent;
       border-top: 5px solid transparent;
       &:hover {
-        color: ${props => props.theme['primary-200']};
-        border-bottom: 5px solid ${props => props.theme['primary-200']};
+        color: ${props => props.theme['primary-000']};
+        border-bottom: 5px solid ${props => props.theme['primary-000']};
         transition: 0.1s ease-in-out;
       }
     }

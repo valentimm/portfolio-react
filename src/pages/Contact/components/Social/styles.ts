@@ -6,10 +6,10 @@ export const ContactBox = styled.main`
   align-items: center;
   transition: all ease-in-out 0.2s;
   border-radius: 9999px;
+  cursor: pointer;
   
   img {
     display: flex;
-    cursor: pointer;
     width: 4rem;
     height: 4rem;
     justify-content: center;
@@ -28,8 +28,8 @@ export const ContactBox = styled.main`
     transition: all ease-in-out 0.2s;
 
     &:hover {
-      background-color: ${props => props.theme['primary-200']};
-      border: 6px solid ${props => props.theme['primary-200']};
+      background-color: ${props => props.theme['bg-300']};
+      border: 6px transparent;
     }
   }
   #name {
