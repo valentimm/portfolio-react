@@ -1,13 +1,5 @@
 import { HomeMain } from "./styles"
-import { saveAs } from 'file-saver';
-
-function handleDownload() {
-  const pdfUrl = './assets/D.pdf'; // Insira a URL do arquivo PDF que deseja baixar
-  const pdfFileName = 'o.pdf'; // Insira o nome que deseja dar ao arquivo PDF baixado
-
-  saveAs(pdfUrl, pdfFileName);
-}
-
+import { TypeAnimation } from "react-type-animation";
 
 export function Home () {
   return (
@@ -16,10 +8,23 @@ export function Home () {
         <div className="infos">
           <h1>Olá, eu sou o</h1>
           <h2>Matheus Valentim :)</h2>
-          <p>Desenvolvedor Front-end</p>
+          <TypeAnimation
+            cursor={true}
+            sequence={[
+              'Desenvolvedor Front-end',
+              2000,
+              'Desenvolvedor Mobile',
+              2000,
+              'Desenvolvedor Python',
+              2000,
+            ]}
+            speed={50}
+            wrapper="p"
+            repeat={Infinity}
+          />
           <div className="buttons">
             <button id="home_button" >
-              <a>Baixar CV</a>
+              <a href="/Currículo-MatheusValentim.pdf" download="Matheus Valentim - Currículo.pdf">Baixar CV</a>
             </button>
             <button id="home_button">
               <a href="mailto:meduardo.valentim@gmail.com">Fale comigo</a>
