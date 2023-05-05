@@ -17,7 +17,7 @@ export const ContactMain = styled.main`
 
   p {
     font-size: 1.25rem;
-    color: ${props => props.theme['accent-200']};
+    color: ${props => props.theme['accent-100']};
   }
 
   #socials {
