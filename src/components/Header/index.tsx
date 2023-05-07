@@ -5,7 +5,7 @@ export function Header() {
   return (
     <HeaderMain>
       <Logo>MV</Logo>
-      <nav>
+      <nav id="navbar">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/stacks">Stacks</NavLink>

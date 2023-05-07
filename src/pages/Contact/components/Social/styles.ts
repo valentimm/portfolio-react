@@ -39,4 +39,12 @@ export const ContactBox = styled.main`
   &:hover{
     transform: scale(0.8);
   }
+
+  @media (max-width: 768px) {
+    #socialContainer {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  
 `

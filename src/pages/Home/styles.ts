@@ -67,4 +67,21 @@ export const HomeMain = styled.main`
       transform: scale(1.1);
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 2rem 2rem;
+    margin-top: 10vh;
+    font-size: 1rem;
+    #container {
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      margin-top: 2rem;
+      margin-right: 0;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
 `;

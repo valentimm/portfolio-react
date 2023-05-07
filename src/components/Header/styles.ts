@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderMain = styled.header`
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -31,6 +31,20 @@ export const HeaderMain = styled.header`
         transition: 0.1s ease-in-out;
       }
     }
+    a.active {
+      color: ${props => props.theme['primary-000']};
+      border-bottom: 5px solid ${props => props.theme['primary-000']};
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-inline: 1rem;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    nav{
+      margin-left: 1rem;
+    }
   }
 `;
 
@@ -39,4 +53,10 @@ export const Logo = styled.h1`
   font-size: 1.5rem;
   font-weight: 700;
   color: ${props => props.theme['primary-000']};
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
 `;

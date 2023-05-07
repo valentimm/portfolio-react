@@ -27,4 +27,24 @@ export const ContactMain = styled.main`
     gap: 4rem;
     margin-top: 2rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 2rem 4rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    #socials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 4rem;
+      gap: 2rem;
+    }
+  }
+  
 `;

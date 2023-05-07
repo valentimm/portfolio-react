@@ -24,4 +24,16 @@ export const StacksList = styled.main`
     justify-content: center;
   }
 
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    #itens {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+  }
 `;
