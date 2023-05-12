@@ -7,6 +7,14 @@ export const AboutMain = styled.main`
   justify-content: center;
   border: 1px solid #ccc;
   margin: 4rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: ${props => props.theme['text-100']};
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid ${props => props.theme['primary-000']};
+  }
   
   p {
     color: ${props => props.theme['text-200']};
@@ -21,5 +29,13 @@ export const AboutMain = styled.main`
   }
   #right , #left {
     width: 50%; 
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;

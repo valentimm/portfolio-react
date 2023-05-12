@@ -57,7 +57,7 @@ export const HomeMain = styled.main`
     align-items: flex-end;
     justify-content: center;
     margin-top: -2rem;
-    margin-right: 8rem;
+    margin-right: 16rem;
     width: 400px;
     height: 400px;
     border-radius: 69% 31% 82% 18% / 29% 52% 48% 71%;
@@ -70,11 +70,20 @@ export const HomeMain = styled.main`
 
   @media (max-width: 768px) {
     padding: 2rem 2rem;
-    margin-top: 10vh;
+    margin-top: 4vh;
     font-size: 1rem;
+    margin-inline: 2rem;
     #container {
       flex-direction: column;
       align-items: center;
+    }
+    h1, h2, p {
+      margin-inline: 0.2rem;
+    }
+    #home_button {
+      width: 10rem;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
     }
     img {
       margin-top: 2rem;
