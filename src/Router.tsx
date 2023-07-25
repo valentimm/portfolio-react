@@ -1,16 +1,16 @@
-import { Routes, Route } from 'react-router-dom'
-import { Home } from './pages/Home'
-import { About } from './pages/About'
-import { Stacks } from './pages/Stacks'
-import { Contact } from './pages/Contact'
+import { Route, Routes } from 'react-router-dom'
 import { DefaultLayout } from './layouts/DefaultLayout'
+import { Contact } from './pages/Contact'
+import { Home } from './pages/Home'
+import { Projects } from './pages/Projects'
+import { Stacks } from './pages/Stacks'
 
 export function Router () {
   return (
     <Routes>
       <Route path='/' element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/stacks" element={<Stacks />} />
         <Route path="/contact" element={<Contact />} />
       </Route>

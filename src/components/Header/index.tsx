@@ -1,5 +1,5 @@
-import { HeaderMain, Logo} from "./styles"
 import { NavLink } from "react-router-dom"
+import { HeaderMain, Logo } from "./styles"
 
 export function Header() {
   return (
@@ -7,7 +7,7 @@ export function Header() {
       <Logo>MV</Logo>
       <nav id="navbar">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/stacks">Stacks</NavLink>
         <NavLink to="/contact">Contacts</NavLink>
       </nav>
