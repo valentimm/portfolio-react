@@ -3,7 +3,7 @@ import { ProjectsMain } from "./styles";
 
 export function Projects () {
   const projects: ProjectThumbnailProps[] = [
-    { key: 1, name: 'Todo List', image: 'todo-thumb.svg', description: 'Um simples todo list', deploy: 'https://todo.mvalentim.dev', code: 'https://github.com/valentimm/todo'},
+    { key: 1, name: 'Todo List', image: 'todo-thumb.svg', description: 'Um todo list desenvolvido no programa Ignite para treinar os conceitos iniciais de React', deploy: 'https://todo.mvalentim.dev', code: 'https://github.com/valentimm/todo'},
     { key: 2, name: 'Pomodoro timer', image: 'pomodoro-thumb.svg', description: 'Um simples pomodoro', deploy: 'https://pomodoro.mvalentim.dev', code: ''},
     { key: 3, name: 'Virtual Badge', image: 'badge-thumb.svg', description: 'Um ', deploy: 'https://valentimm.github.io/PersonalBadge/', code: 'https://github.com/valentimm/PersonalBadge'},
     { key: 4, name: 'Coffee Shop', image: 'coffee-thumb.svg', description: '', deploy: 'https://coffee.mvalentim.dev/', code: 'https://github.com/valentimm/coffee-page'},

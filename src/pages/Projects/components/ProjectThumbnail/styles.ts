@@ -77,6 +77,7 @@ export const StyleProjectThumbnailMain = styled.div`
     p {
       color: ${props => props.theme["text-100"]};
       margin: 0;
+      line-height: 160%;
     }
   }
   &:hover .infos {
