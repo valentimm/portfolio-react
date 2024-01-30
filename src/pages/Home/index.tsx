@@ -13,8 +13,6 @@ export function Home () {
             sequence={[
               'Desenvolvedor Front-end',
               2000,
-              'Desenvolvedor Mobile',
-              2000,
               'Desenvolvedor Python',
               2000,
             ]}
