@@ -12,5 +12,5 @@ export function App() {
         <GlobalStyle />
       </BrowserRouter>
     </ThemeProvider>
-  )
+  );
 }
