@@ -17,9 +17,9 @@ export function ProjectThumbnail({ name, image, description, deploy, code }: Pro
         <div className="infos">
           <h3>{name}</h3>
           <p>{description}</p>
-        <div className="used-stacks">
-          <h4>Stacks utilizadas</h4>
-        </div>
+        {/*<div className="used-stacks"> */}
+        {/*  <h4>Stacks utilizadas</h4> */}
+        {/*</div> */}
         </div>
         <div className="buttons-container">
           <a href={deploy} target="_blank"><button>Ver deploy</button></a>
