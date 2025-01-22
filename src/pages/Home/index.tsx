@@ -22,7 +22,7 @@ export function Home () {
           />
           <div className="buttons">
             <button id="home_button" >
-              <a href="/Curriculum - Matheus Valentim - Ago24.pdf" download="Curriculum - Matheus Valentim - Ago24.pdf">Baixar CV</a>
+              <a href="/Curriculo - Matheus Valentim - Jan25.pdf" download="Curriculum - Matheus Valentim - Ago24.pdf">Baixar CV</a>
             </button>
             <button id="home_button">
               <a href="contact">Fale comigo</a>

@@ -5,7 +5,7 @@ export interface ProjectThumbnailProps {
   name: string;
   image: string;
   description: string;
-  deploy: string;
+  deploy?: string;
   code: string;
 }
 
@@ -13,17 +13,20 @@ export function ProjectThumbnail({ name, image, description, deploy, code }: Pro
   return (
     <StyleProjectThumbnailMain>
       <div className="container">
-        <img src={image} alt="Todo Thumbnail" />
+        <img src={image} alt={`${name} Thumbnail`} />
         <div className="infos">
           <h3>{name}</h3>
           <p>{description}</p>
-        {/*<div className="used-stacks"> */}
-        {/*  <h4>Stacks utilizadas</h4> */}
-        {/*</div> */}
         </div>
         <div className="buttons-container">
-          <a href={deploy} target="_blank"><button>Ver deploy</button></a>
-          <a href={code} target="_blank"><button>Ver código</button></a>
+          {deploy && (
+            <a href={deploy} target="_blank" rel="noopener noreferrer">
+              <button>Ver deploy</button>
+            </a>
+          )}
+          <a href={code} target="_blank" rel="noopener noreferrer">
+            <button>Ver código</button>
+          </a>
         </div>
       </div>
     </StyleProjectThumbnailMain>
